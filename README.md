@@ -1,5 +1,5 @@
 ﻿# backupautomatico_googledrive
-Projeto de aurtomação criado para realizar o backup de arquivos no desktop para o Google Drive diretamente. O projeto foi criado utilizando a ferramenta pyautogui de automação dos controles do mouse e do teclado. Para rodar os testes foi utilizado o Jupyter.
+Projeto de automação criado para realizar o backup de arquivos no desktop para o Google Drive diretamente. O projeto foi criado utilizando a ferramenta pyautogui de automação dos controles do mouse e do teclado. Para rodar os testes foi utilizado o Jupyter.
 
 
 +Notas:
