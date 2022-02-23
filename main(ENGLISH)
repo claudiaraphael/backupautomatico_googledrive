@@ -1,0 +1,35 @@
+import pyautogui
+import time
+
+#create alert so the user doesnt touch the mouse or keyboard while running.
+pyautogui.alert('The code will start running. dont touch the pc.')
+pyautogui.PAUSE = 0.5 
+
+#open up firefox
+pyautogui.press('winleft')
+pyautogui.write('Firefox')
+pyautogui.press('enter')
+time.sleep(2)     
+ 
+#open up Google Drive
+pyautogui.hotkey('ctrl', 'l')
+pyautogui.write('https://drive.google.com/drive/my-drive')
+pyautogui.press('enter')
+time.sleep(2)
+
+#go to desktop and grab file
+pyautogui.hotkey('winleft', 'd')
+pyautogui.moveTo(1810, 61)
+pyautogui.mouseDown()  #holds file 
+
+#move to Google Drive tab
+pyautogui.moveTo(1515,687)
+pyautogui.hotkey('alt','tab')
+time.sleep(1)
+
+#let go of file and give it time to download on Google Drive
+pyautogui.mouseUp()
+time.sleep(5)
+
+#finish
+pyautogui.alert('It\'s done running. You can use your pc again.')
